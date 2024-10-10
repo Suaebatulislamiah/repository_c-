@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket Pesawat</title>
+</head>
+<body>
+
+    <h1>Form Pemesanan Tiket Pesawat</h1>
+    <fieldset>
+    <legend><h2>Informasi Penumpang</h2></legend>
+    <form action="#" method="post">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" required><br><br>
+
+        <label for="nomor_identitas">Nomor Identitas (KTP/Paspor):</label>
+        <input type="text" id="nomor_identitas" name="nomor_identitas" placeholder="Masukkan Nomor Identitas" required><br><br>
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin">
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select><br><br>
+
+        <label for="email">Alamat Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan Email"><br><br>
+
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" id="telepon" name="telepon" placeholder="Masukkan Nomor Telepon"><br><br>
+    </fieldset>
+
+    <fieldset>
+       <legend><h2>Informasi Penerbangan</h2></legend>
+
+        <label for="bandara_keberangkatan">Bandara Keberangkatan:</label>
+        <select id="bandara_keberangkatan" name="bandara_keberangkatan">
+            <option value="Tenggerang">Soekarno-Hatta (tenggerang)</option>
+            <option value="Jawa Tengah">Ahmad Yani (Jawa Tengah)</option>
+            <option value="Bali">Internasional I Gusti Ngurah Rai (Bali)</option>
+            <option value="Lambaok">Zainudin Abdul Majid (Lombok)</option>
+            <option value="Bengkulu">Bandara Fatmawati (Bengkulu)</option>
+            <option value="Minang Kabau">Minang Kabau (Minang Kabau)</option>
+            </select><br><br>
+
+        <label for="bandara_tujuan">Bandara Tujuan:</label>
+        <select id="bandara_tujuan" name="bandara_tujuan">
+            <option value="Tenggerang">Soekarno-Hatta (Tenggerang)</option>
+            <option value="Jawa Tengah">Ahmad Yani (Jawa Tengah)</option>
+            <option value="Bali">Internasional I Gusti Ngurah Rai (Bali)</option>
+            <option value="Lombok">Zainudin Abdul Majid (Lombok)</option>
+            <option value="Bengkulu">Bandara Fatmawati (Bengkulu)</option>
+            <option value="Minang Kabau">Bandara Minang Kabau (Minang Kabau)</option>
+            </select><br><br>
+
+        <label for="tanggal_keberangkatan">Tanggal Keberangkatan:</label>
+        <input type="date" id="tanggal_keberangkatan" name="tanggal_keberangkatan" required><br><br>
+
+        <label for="tanggal_kepulangan">Tanggal Kepulangan (opsional):</label>
+        <input type="date" id="tanggal_kepulangan" name="tanggal_kepulangan"><br><br>
+
+        <label for="jumlah_penumpang">Jumlah Penumpang:</label>
+        <input type="number" id="jumlah_penumpang" name="jumlah_penumpang" min="1" value="1"><br><br>
+
+        <label for="kelas_penerbangan">Kelas Penerbangan:</label>
+        <select id="kelas_penerbangan" name="kelas_penerbangan">
+            <option value="Ekonomi">Ekonomi</option>
+            <option value="Bisnis">Bisnis</option>
+            <option value="First Class">First Class</option>
+        </select><br><br>
+    </fieldset>
+    <fieldset>
+        <legend><h2>Metode Pembayaran</h2></legend>
+        <label>Pilih Metode Pembayaran:</label><br>
+        <input type="radio" id="kartu_kredit" name="metode_pembayaran" value="Kartu Kredit">
+        <label for="kartu_kredit">Kartu Kredit</label><br>
+        <input type="radio" id="transfer_bank" name="metode_pembayaran" value="Transfer Bank">
+        <label for="transfer_bank">Transfer Bank</label><br>
+        <input type="radio" id="e-wallet" name="metode_pembayaran" value="E-Wallet">
+        <label for="e-wallet">E-Wallet (GoPay, OVO, Dana dll.)</label><br><br>
+
+        <input type="submit" value="Pesan Tiket">
+    </fieldset>
+    </form>
+
+</body>
+</html>
